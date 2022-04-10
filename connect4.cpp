@@ -17,8 +17,6 @@ char bp[6][8]
 	{'0', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
 };
 
-char xo = 'O' || 'X';
-
 int checkwin();
 
 int x; //choice of column
@@ -69,255 +67,663 @@ int checkwin()
 	//Winning in rows
 	//First row (bottom row)
 	if(bp[0][1]==coin && bp[0][2]==coin && bp[0][3]==coin && bp[0][4]==coin){
-/*work in progress
+
 		bp[0][1] = tolower(coin);
 		bp[0][2] = tolower(coin);
 		bp[0][3] = tolower(coin);
 		bp[0][4] = tolower(coin);
-*/
+
 		return 1;
 	}
 	else if(bp[0][2]==coin && bp[0][3]==coin && bp[0][4]==coin && bp[0][5]==coin){
+
+		bp[0][2] = tolower(coin);
+		bp[0][3] = tolower(coin);
+		bp[0][4] = tolower(coin);
+		bp[0][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[0][3]==coin && bp[0][4]==coin && bp[0][5]==coin && bp[0][6]==coin){
+
+		bp[0][3] = tolower(coin);
+		bp[0][4] = tolower(coin);
+		bp[0][5] = tolower(coin);
+		bp[0][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[0][4]==coin && bp[0][5]==coin && bp[0][6]==coin && bp[0][7]==coin){
+
+		bp[0][4] = tolower(coin);
+		bp[0][5] = tolower(coin);
+		bp[0][6] = tolower(coin);
+		bp[0][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//Second row
 	else if(bp[1][1]==coin && bp[1][2]==coin && bp[1][3]==coin && bp[1][4]==coin){
+
+		bp[1][1] = tolower(coin);
+		bp[1][2] = tolower(coin);
+		bp[1][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][2]==coin && bp[1][3]==coin && bp[1][4]==coin && bp[1][5]==coin){
+
+		bp[1][2] = tolower(coin);
+		bp[1][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][3]==coin && bp[1][4]==coin && bp[1][5]==coin && bp[1][6]==coin){
+
+		bp[1][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+		bp[1][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][4]==coin && bp[1][5]==coin && bp[1][6]==coin && bp[1][7]==coin){
+
+		bp[1][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+		bp[1][6] = tolower(coin);
+		bp[1][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//third row
 	else if(bp[2][1]==coin && bp[2][2]==coin && bp[2][3]==coin && bp[2][4]==coin){
+
+		bp[2][1] = tolower(coin);
+		bp[2][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][2]==coin && bp[2][3]==coin && bp[2][4]==coin && bp[2][5]==coin){
+
+		bp[2][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][3]==coin && bp[2][4]==coin && bp[2][5]==coin && bp[2][6]==coin){
+
+		bp[2][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[2][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][4]==coin && bp[2][5]==coin && bp[2][6]==coin && bp[2][7]==coin){
+
+		bp[2][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[2][6] = tolower(coin);
+		bp[2][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//fourth row
 	else if(bp[3][1]==coin && bp[3][2]==coin && bp[3][3]==coin && bp[3][4]==coin){
+
+		bp[3][1] = tolower(coin);
+		bp[3][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][2]==coin && bp[3][3]==coin && bp[3][4]==coin && bp[3][5]==coin){
+
+		bp[3][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][3]==coin && bp[3][4]==coin && bp[3][5]==coin && bp[3][6]==coin){
+
+		bp[3][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[3][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][4]==coin && bp[3][5]==coin && bp[3][6]==coin && bp[3][7]==coin){
+
+		bp[3][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[3][6] = tolower(coin);
+		bp[3][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//fifth row
 	else if(bp[4][1]==coin && bp[4][2]==coin && bp[4][3]==coin && bp[4][4]==coin){
+
+		bp[4][1] = tolower(coin);
+		bp[4][2] = tolower(coin);
+		bp[4][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][2]==coin && bp[4][3]==coin && bp[4][4]==coin && bp[4][5]==coin){
+
+		bp[4][2] = tolower(coin);
+		bp[4][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+		bp[4][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][3]==coin && bp[4][4]==coin && bp[4][5]==coin && bp[4][6]==coin){
+
+		bp[4][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+		bp[4][5] = tolower(coin);
+		bp[4][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][4]==coin && bp[4][5]==coin && bp[4][6]==coin && bp[4][7]==coin){
+
+		bp[4][4] = tolower(coin);
+		bp[4][5] = tolower(coin);
+		bp[4][6] = tolower(coin);
+		bp[4][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//sixth row (Top row)
 	else if(bp[5][1]==coin && bp[5][2]==coin && bp[5][3]==coin && bp[5][4]==coin){
+
+		bp[5][1] = tolower(coin);
+		bp[5][2] = tolower(coin);
+		bp[5][3] = tolower(coin);
+		bp[5][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][2]==coin && bp[5][3]==coin && bp[5][4]==coin && bp[5][5]==coin){
+
+		bp[5][2] = tolower(coin);
+		bp[5][3] = tolower(coin);
+		bp[5][4] = tolower(coin);
+		bp[5][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][3]==coin && bp[5][4]==coin && bp[5][5]==coin && bp[5][6]==coin){
+
+		bp[5][3] = tolower(coin);
+		bp[5][4] = tolower(coin);
+		bp[5][5] = tolower(coin);
+		bp[5][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][4]==coin && bp[5][5]==coin && bp[5][6]==coin && bp[5][7]==coin){
+
+		bp[5][4] = tolower(coin);
+		bp[5][5] = tolower(coin);
+		bp[5][6] = tolower(coin);
+		bp[5][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//Column win check
 	//First column(Left)
 	else if(bp[0][1]==coin && bp[1][1]==coin && bp[2][1]==coin && bp[3][1]==coin){
+
+		bp[0][1] = tolower(coin);
+		bp[1][1] = tolower(coin);
+		bp[2][1] = tolower(coin);
+		bp[3][1] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][1]==coin && bp[2][1]==coin && bp[3][1]==coin && bp[4][1]==coin){
+
+		bp[1][1] = tolower(coin);
+		bp[2][1] = tolower(coin);
+		bp[3][1] = tolower(coin);
+		bp[4][1] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][1]==coin && bp[3][1]==coin && bp[4][1]==coin && bp[5][1]==coin){
+
+		bp[2][1] = tolower(coin);
+		bp[3][1] = tolower(coin);
+		bp[4][1] = tolower(coin);
+		bp[5][1] = tolower(coin);
+
 		return 1;
 	}
 
 	//second column
 	else if(bp[0][2]==coin && bp[1][2]==coin && bp[2][2]==coin && bp[3][2]==coin){
+
+		bp[0][2] = tolower(coin);
+		bp[1][2] = tolower(coin);
+		bp[2][2] = tolower(coin);
+		bp[3][2] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][2]==coin && bp[2][2]==coin && bp[3][2]==coin && bp[4][2]==coin){
+
+		bp[1][2] = tolower(coin);
+		bp[2][2] = tolower(coin);
+		bp[3][2] = tolower(coin);
+		bp[4][2] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][2]==coin && bp[3][2]==coin && bp[4][2]==coin && bp[5][2]==coin){
+
+		bp[2][2] = tolower(coin);
+		bp[3][2] = tolower(coin);
+		bp[4][2] = tolower(coin);
+		bp[5][2] = tolower(coin);
+
 		return 1;
 	}
 
 	//third column
 	else if(bp[0][3]==coin && bp[1][3]==coin && bp[2][3]==coin && bp[3][3]==coin){
+
+		bp[0][3] = tolower(coin);
+		bp[1][3] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[3][3] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][3]==coin && bp[2][3]==coin && bp[3][3]==coin && bp[4][3]==coin){
+
+		bp[1][3] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[4][3] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][3]==coin && bp[3][3]==coin && bp[4][3]==coin && bp[5][3]==coin){
+
+		bp[2][3] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[4][3] = tolower(coin);
+		bp[5][3] = tolower(coin);
+
 		return 1;
 	}
 
 	//fourth column
 	else if(bp[0][4]==coin && bp[1][4]==coin && bp[2][4]==coin && bp[3][4]==coin){
+
+		bp[0][4] = tolower(coin);
+		bp[1][4] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[3][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][4]==coin && bp[2][4]==coin && bp[3][4]==coin && bp[4][4]==coin){
+
+		bp[1][4] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[4][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][4]==coin && bp[3][4]==coin && bp[4][4]==coin && bp[5][4]==coin){
+
+		bp[2][4] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[4][4] = tolower(coin);
+		bp[5][4] = tolower(coin);
+
 		return 1;
 	}
 
 	//fifth column
 	else if(bp[0][5]==coin && bp[1][5]==coin && bp[2][5]==coin && bp[3][5]==coin){
+
+		bp[0][5] = tolower(coin);
+		bp[1][5] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[3][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][5]==coin && bp[2][5]==coin && bp[3][5]==coin && bp[4][5]==coin){
+
+		bp[1][5] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[4][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][5]==coin && bp[3][5]==coin && bp[4][5]==coin && bp[5][5]==coin){
+
+		bp[2][5] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[4][5] = tolower(coin);
+		bp[5][5] = tolower(coin);
+
 		return 1;
 	}
 
 	//sixth column
 	else if(bp[0][6]==coin && bp[1][6]==coin && bp[2][6]==coin && bp[3][6]==coin){
+
+		bp[0][6] = tolower(coin);
+		bp[1][6] = tolower(coin);
+		bp[2][6] = tolower(coin);
+		bp[3][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][6]==coin && bp[2][6]==coin && bp[3][6]==coin && bp[4][6]==coin){
+
+		bp[1][6] = tolower(coin);
+		bp[2][6] = tolower(coin);
+		bp[3][6] = tolower(coin);
+		bp[4][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][6]==coin && bp[3][6]==coin && bp[4][6]==coin && bp[5][6]==coin){
+
+		bp[2][6] = tolower(coin);
+		bp[3][6] = tolower(coin);
+		bp[4][6] = tolower(coin);
+		bp[5][6] = tolower(coin);
+
 		return 1;
 	}
 
 	//seventh column(right)
 	else if(bp[0][7]==coin && bp[1][7]==coin && bp[2][7]==coin && bp[3][7]==coin){
+
+		bp[0][7] = tolower(coin);
+		bp[1][7] = tolower(coin);
+		bp[2][7] = tolower(coin);
+		bp[3][7] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][7]==coin && bp[2][7]==coin && bp[3][7]==coin && bp[4][7]==coin){
+
+		bp[1][7] = tolower(coin);
+		bp[2][7] = tolower(coin);
+		bp[3][7] = tolower(coin);
+		bp[4][7] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][7]==coin && bp[3][7]==coin && bp[4][7]==coin && bp[5][7]==coin){
+
+		bp[2][7] = tolower(coin);
+		bp[3][7] = tolower(coin);
+		bp[4][7] = tolower(coin);
+		bp[5][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//Winning in foward diagonal /
 	// Row 0 - 3
 	else if(bp[0][1]==coin && bp[1][2]==coin && bp[2][3]==coin && bp[3][4]==coin){
+
+		bp[0][1] = tolower(coin);
+		bp[1][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[0][2]==coin && bp[1][3]==coin && bp[2][4]==coin && bp[3][5]==coin){
+
+		bp[0][2] = tolower(coin);
+		bp[1][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[0][3]==coin && bp[1][4]==coin && bp[2][5]==coin && bp[3][6]==coin){
+
+		bp[0][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[3][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[0][4]==coin && bp[1][5]==coin && bp[2][6]==coin && bp[3][7]==coin){
+
+		bp[0][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+		bp[2][6] = tolower(coin);
+		bp[3][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//row 1-4
 	else if(bp[1][1]==coin && bp[2][2]==coin && bp[3][3]==coin && bp[4][4]==coin){
+
+		bp[1][1] = tolower(coin);
+		bp[2][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][2]==coin && bp[2][3]==coin && bp[3][4]==coin && bp[4][5]==coin){
+
+		bp[1][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[4][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][3]==coin && bp[2][4]==coin && bp[3][5]==coin && bp[4][6]==coin){
+
+		bp[1][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[4][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[1][4]==coin && bp[2][5]==coin && bp[3][6]==coin && bp[4][7]==coin){
+
+		bp[1][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[3][6] = tolower(coin);
+		bp[4][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//row 2-5
 	else if(bp[2][1]==coin && bp[3][2]==coin && bp[4][3]==coin && bp[5][4]==coin){
+
+		bp[2][1] = tolower(coin);
+		bp[3][2] = tolower(coin);
+		bp[4][3] = tolower(coin);
+		bp[5][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][2]==coin && bp[3][3]==coin && bp[4][4]==coin && bp[5][5]==coin){
+
+		bp[2][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+		bp[5][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][3]==coin && bp[3][4]==coin && bp[4][5]==coin && bp[5][6]==coin){
+
+		bp[2][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[4][5] = tolower(coin);
+		bp[5][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[2][4]==coin && bp[3][5]==coin && bp[4][6]==coin && bp[5][7]==coin){
+
+		bp[2][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[4][6] = tolower(coin);
+		bp[5][7] = tolower(coin);
+
 		return 1;
 	}
 
 	// winning in backward diagonal \
 	//row 0-3
 	else if(bp[3][1]==coin && bp[2][2]==coin && bp[1][3]==coin && bp[0][4]==coin){
+
+		bp[3][1] = tolower(coin);
+		bp[2][2] = tolower(coin);
+		bp[1][3] = tolower(coin);
+		bp[0][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][2]==coin && bp[2][3]==coin && bp[1][4]==coin && bp[0][5]==coin){
+
+		bp[3][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+		bp[0][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][3]==coin && bp[2][4]==coin && bp[1][5]==coin && bp[0][6]==coin){
+
+		bp[3][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+		bp[0][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[3][4]==coin && bp[2][5]==coin && bp[1][6]==coin && bp[0][7]==coin){
+
+		bp[3][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[1][6] = tolower(coin);
+		bp[0][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//row 1-4
 	else if(bp[4][1]==coin && bp[3][2]==coin && bp[2][3]==coin && bp[1][4]==coin){
+
+		bp[4][1] = tolower(coin);
+		bp[3][2] = tolower(coin);
+		bp[2][3] = tolower(coin);
+		bp[1][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][2]==coin && bp[3][3]==coin && bp[2][4]==coin && bp[1][5]==coin){
+
+		bp[4][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+		bp[1][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][3]==coin && bp[3][4]==coin && bp[2][5]==coin && bp[1][6]==coin){
+
+		bp[4][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+		bp[1][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[4][4]==coin && bp[3][5]==coin && bp[2][6]==coin && bp[1][7]==coin){
+
+		bp[4][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[2][6] = tolower(coin);
+		bp[1][7] = tolower(coin);
+
 		return 1;
 	}
 
 	//row 2-5
 	else if(bp[5][1]==coin && bp[4][2]==coin && bp[3][3]==coin && bp[2][4]==coin){
+
+		bp[5][1] = tolower(coin);
+		bp[4][2] = tolower(coin);
+		bp[3][3] = tolower(coin);
+		bp[2][4] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][2]==coin && bp[4][3]==coin && bp[3][4]==coin && bp[2][5]==coin){
+
+		bp[5][2] = tolower(coin);
+		bp[4][3] = tolower(coin);
+		bp[3][4] = tolower(coin);
+		bp[2][5] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][3]==coin && bp[4][4]==coin && bp[3][5]==coin && bp[2][6]==coin){
+
+		bp[5][3] = tolower(coin);
+		bp[4][4] = tolower(coin);
+		bp[3][5] = tolower(coin);
+		bp[2][6] = tolower(coin);
+
 		return 1;
 	}
 	else if(bp[5][4]==coin && bp[4][5]==coin && bp[3][6]==coin && bp[2][7]==coin){
+
+		bp[5][4] = tolower(coin);
+		bp[4][5] = tolower(coin);
+		bp[3][6] = tolower(coin);
+		bp[2][7] = tolower(coin);
+
 		return 1;
 	}
 
