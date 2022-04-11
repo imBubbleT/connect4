@@ -27,9 +27,15 @@ int player = 1;
 
 int i;
 
+string player1, player2, playerName;
 
 int main()
 {
+	cout << "Enter player 1 name: ";
+	getline(cin, player1);
+
+	cout << "\nEnter player 2 name: ";
+	getline(cin, player2);
 
 	do{
 
@@ -38,7 +44,12 @@ int main()
 	player = (player % 2) ? 1:2 ;
 	coin = (player == 1) ? 'X':'O';
 
-	cout << "\nPlayer " << player << "'s turn: ";
+	if(player == 1 ){
+		cout << "\n" << player1 << "'s turn (X): ";
+	}
+	else{
+		cout << "\n" << player2 << "'s turn (O): ";
+	}
 
 	choice();
 
@@ -51,8 +62,12 @@ int main()
 	board();
 
 	player--;
+
+	playerName = (player == 1)? player1 : player2;
+
+
 	if(i == 1){
-		cout << "\nPlayer " << player << " wins!!\n";
+		cout << "\n" << playerName << " wins!!\n";
 	}
 	else{
 		cout << "\nGame Draw!!\n";
